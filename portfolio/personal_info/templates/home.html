@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Navid Kouchaki | Developer</title>
+    <link rel='stylesheet' type='text/css' href={% static 'main-style.css' %} />
+    <!-- <meta name=”viewport” content=”width=device-width, initial-scale=1.0″, maximum-scale=1.0__/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  </head>
+  <body class='site'>
+      <div class='header-component'>
+        <!-- <div class='header-outer-container container'> -->
+          <div class='header-container'>
+            <div id='global-nav'>
+              <a id='nav-name' href='./'>Navid Kouchaki Pour</a>
+              <a id="nav-btn" onclick="showHideNav()">
+                  <img src={% static 'images/menu.png' %} alt="Main menu" id='menu-btn-img'>
+              </a>
+            </div>
+            <div id='nav-items-component'>
+              <div id='nav-items'>
+                <a href="projects" class='nav-item'>Projects</a>
+                <a href="#" class='nav-item'>Resume</a>
+                <a href="#" class='nav-item' id='nav-contact'>Contact Me</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <header class='masthead-component'>
+        <div class='masthead'>
+            <h1>Hello, I'm Navid</h1> <!-- Closing Element -->
+            <p id='cont1-Main'>An electrical and computer engineering student. Learning design on the side!</p>
+          <!-- <a href="#"><img class='toggle-menu'></a> -->
+          <!-- <a href='#'><img class='logo' src="logo.png" alt="Home"></a> -->
+        </div>
+      </header>
+      <main class='main-content'>
+        <div class='personal-statement-component component'>
+          <div class='personal-statement container'>
+            <div>
+              <h1 id='cont1-header'>Get to know me</h1>
+              <p>I’m a super curious guy and made this website to be able to share my ideas and projects. I spend a lot of time working with software as well as electronics (prefer software over electronics tho, as I have never electrocuted myself while trying to debug a code!)
+                <br>I enjoy learning to use new and challenging technologies and LOVE drinking a good cup of coffee while praying to all 12 greek gods(Yes, there is twelve of them. Unless Alexa is lying to me, still don't know if I can trust these damn robots!) that my codes would run without a problem.
+              </p>
+            </div>
+            <div class='empty-space'>
+            </div>
+            <div>
+              <h1 id='cont1-header'>Future Goals</h1>
+              <ul>
+                <!-- <li>Complete hello world</li> -->
+                <li>Complete Hello World program in as many languages as possible (currently on the 35th)</li>
+                <li>Design for UX of websites</li>
+                <li>Create a smart home security system using gesture control and text massages</li>
+                <li>Machine learning/AI</li>
+                <li>Software Engineering and Design</li>
+                <li>Embedded Systems (more IoT)</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class='skills-component component'>
+          <div class='skills-container container'>
+            <h1>Top Skills</h1>
+            <div class='skills'>
+              <div class="skill">
+                <div class="skill-img">
+                    <img src= {% static 'images/web-design.svg' %}>
+                </div>
+                <p>Front-End Developer</p>
+              </div>
+              <div class="skill">
+                <div class="skill-img">
+                    <img src= {% static "images/algorithm.svg" %} alt="Algorithms and Data Structures">
+                </div>
+                <p>Algorithms and Data Structures</p>
+              </div>
+              <div class="skill">
+                <div class="skill-img">
+                    <img src= {% static "images/software.svg" %} alt="">
+                </div>
+                <p>C++, Python and PHP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class='projects'> -->
+          <!-- <div class="previous-project-field">
+              <a onclick="previousProjectImage()"><img src= {% static "images/left-arrow.svg" %}  alt="previous image" class='project-nav-image'></a>
+          </div>
+          <div class="project" id="project1">
+            <p>Project 1</p>
+          </div>
+          <div class="project" id="project2">
+            <p>Project 2</p>
+          </div>
+          <div class="project" id="project3">
+            <p>Project 3</p>
+          </div>
+          <div class="next-project-field">
+              <a onclick='nextProjectImage()'><img src= {% static "images/right-arrow.svg" %} alt="next-image" class='project-nav-image'></a>
+          </div> -->
+        <div class='projects-component component'>
+          <div class='projects container'>
+            <!-- <img src= {%static "images/laptop.png" %} alt="Resume" class='resume-image'> -->
+            <p><a href='#' class='plain-link block-display'>View my Resume</a></p>
+          </div>
+        </div>
+        <div class="resume-component component">
+          <div class="resume container">
+            <h1>Top Projects</h1>
+            <table class='table'>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Language</th>
+              </thead>
+              <tbody>
+                {% for project in projects.all %}
+                  {% if project.isOnHome %}
+                    <tr>
+                      <td><a href='{{ project.github }}' class='focus_underline'>{{project.name}}</a></td>
+                      <td>{{ project.description }}</td>
+                      <td>{{ project.language }}</td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+
+      <footer class="colophon">
+        <div class='footer-icons'>
+          <a href="https://github.com/navidkpr" class='footer-icon-section'>
+            <img src={% static "images/github.png" %} alt="Github Account" class='footer-icon'>
+          </a>
+          <a href="https://www.instagram.com/navid_kouchaki" class='footer-icon-section'>
+            <img src={% static "images/instagram.png" %} alt="Linkedin Account" class='footer-icon'>
+          </a>
+          <a href="#" class='footer-icon-section'>
+            <img src={% static "images/email.png" %} alt="Email" class='footer-icon'>
+          </a>
+        </div>
+      </footer>
+      <script src={% static 'scripts/jquery.js' %}></script>
+      <script src={% static 'scripts/script.js' %}></script>
+  </body>
+</html>

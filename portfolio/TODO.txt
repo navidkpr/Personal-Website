@@ -1,0 +1,17 @@
+///////////////////////////////// PART 1: MOBILE VERSION DESIGN /////////////////////////////////
+
+4. Find icons for mail/linkedin/facebook/github.
+11. Fix the extra padding between name and the first nav item.
+13. Make the backend automated -> Add script for automatically pulling out github repositories
+14. Make the Projects, Resume, and Contact pages
+17. upload resume
+18. Add the backend for mailing/contact and make the page for it.
+20. Change the db engine
+22. Add Read more button in the bottom of home's .masthead
+24. Fix the skills section of the bigger screens.
+25. Add navbar and contact info to Footer
+26. Fix the nav bar for big screens
+
+
+Bonus:
+1. Rearrange the personal info paragraphs using css grids.

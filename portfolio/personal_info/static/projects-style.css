@@ -1,0 +1,27 @@
+@media screen and (min-width: 400px) {
+	.resume-component {
+		padding-top: 20px!important;
+		padding-bottom: 20px!important;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.resume-component {
+		padding-top: 50px!important;
+		padding-bottom: 50px!important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.resume-component {
+		padding-top: 70px!important;
+		padding-bottom: 70px!important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.resume-component {
+		padding-top: 100px!important;
+		padding-bottom: 100px!important;
+	}
+}

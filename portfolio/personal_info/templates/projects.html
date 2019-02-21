@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Navid Kouchaki | Developer</title>
+    <link rel='stylesheet' type='text/css' href={% static 'main-style.css' %} />
+    <link rel="stylesheet" type="text/css" href= {% static 'projects-style.css' %} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+</head>
+<body>
+	<div class='site'>
+    <div class='header-component'>
+        <div class='header-container container'>
+          <div id='global-nav'>
+            <a id='nav-name' href='./'>Navid Kouchaki Pour</a>
+            <a id="nav-btn" onclick="showHideNav()">
+                <img src={% static 'images/menu.png' %} alt="Main menu" id='menu-btn-img'>
+            </a>
+          </div>
+          <div id='nav-items-component'>
+            <div id='nav-items'>
+              <a href="projects" class='nav-item'>Projects</a>
+              <a href="#" class='nav-item'>Resume</a>
+              <a href="#" class='nav-item' id='nav-contact'>Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-component component">
+        <div class="resume container">
+          <h1>Top Projects</h1>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Language</th>
+            </thead>
+            <tbody>
+              {% for project in projects.all %}
+                {% if project.isOnProjects %}
+                  <tr>
+                    <td><a href='{{ project.github }}' class='focus_underline'>{{project.name}}</a></td>
+                    <td>{{ project.description }}</td>
+                    <td>{{ project.language }}</td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    <footer class="colophon">
+      <div class='footer-icons'>
+        <a href="https://github.com/navidkpr" class='footer-icon-section'>
+          <img src={% static "images/github.png" %} alt="Github Account" class='footer-icon'>
+        </a>
+        <a href="https://www.instagram.com/navid_kouchaki" class='footer-icon-section'>
+          <img src={% static "images/instagram.png" %} alt="Linkedin Account" class='footer-icon'>
+        </a>
+        <a href="#" class='footer-icon-section'>
+          <img src={% static "images/email.png" %} alt="Email" class='footer-icon'>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src={% static 'scripts/jquery.js' %}></script>
+  <script src={% static 'scripts/script.js' %}></script>
+</body>
+</html>
