@@ -1,0 +1,207 @@
+Starting Portfolio as root
+/root/django-projects/portfolio/portfolioenv/bin/gunicorn_start: line 16: ../bin/activate: No such file or directory
+[2019-02-21 18:23:23 +0000] [7193] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f2a8ab8e9b0>
+  errorlog: -
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f2a8ab8e7d0>
+  pre_fork: <function pre_fork at 0x7f2a8ab8e8c0>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 3
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: Portfolio
+  pre_exec: <function pre_exec at 0x7f2a8ab8ed70>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f2a8aba8320>
+  logconfig: None
+  logconfig_dict: {}
+  config: None
+  pidfile: None
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7f2a8ab8e6e0>
+  reload_extra_files: []
+  accesslog: None
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f2a8ab8ee60>
+  post_request: <function post_request at 0x7f2a8ab8eed8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f2a8ab8eb90>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f2a8ab8e5f0>
+  post_worker_init: <function post_worker_init at 0x7f2a8ab8eaa0>
+  worker_abort: <function worker_abort at 0x7f2a8ab8ec80>
+  child_exit: <function child_exit at 0x7f2a8aba8050>
+  worker_exit: <function worker_exit at 0x7f2a8aba8140>
+  default_proc_name: portfolio.wsgi:application
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/django-projects/portfolio/portfolio
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['0.0.0.0:8080']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f2a8aba8230>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-02-21 18:23:23 +0000] [7193] [INFO] Starting gunicorn 19.9.0
+[2019-02-21 18:23:23 +0000] [7193] [DEBUG] Arbiter booted
+[2019-02-21 18:23:23 +0000] [7193] [INFO] Listening at: http://0.0.0.0:8080 (7193)
+[2019-02-21 18:23:23 +0000] [7193] [INFO] Using worker: sync
+[2019-02-21 18:23:23 +0000] [7205] [INFO] Booting worker with pid: 7205
+[2019-02-21 18:23:23 +0000] [7206] [INFO] Booting worker with pid: 7206
+[2019-02-21 18:23:23 +0000] [7207] [INFO] Booting worker with pid: 7207
+[2019-02-21 18:23:23 +0000] [7193] [DEBUG] 3 workers
+[2019-02-21 18:23:24 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:23:29 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:23:30 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:23:31 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:33 +0000] [7205] [DEBUG] GET /projects
+[2019-02-21 18:23:33 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:34 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:23:35 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:35 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:23:37 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:39 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:23:45 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:46 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:23:47 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:51 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:23:52 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:23:53 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:55 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:23:57 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:23:59 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:00 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:24:05 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:07 +0000] [7207] [DEBUG] GET /projects
+[2019-02-21 18:24:10 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:13 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:13 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:14 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:15 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:17 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:20 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:21 +0000] [7205] [DEBUG] GET /connect-plus-with-learnsmart-psychology-1-semester-access-card-for-psychsmartconnect-reading-3-0-access-card.pdf
+[2019-02-21 18:24:24 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:26 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:24:27 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:29 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:30 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:24:31 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:32 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:24:34 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:39 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:24:39 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:41 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:42 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:44 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:46 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:46 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:47 +0000] [7207] [DEBUG] GET /projects
+[2019-02-21 18:24:49 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:50 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:24:50 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:51 +0000] [7205] [DEBUG] GET /
+[2019-02-21 18:24:53 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:53 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:24:55 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:24:58 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:00 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:00 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:05 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:06 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:07 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:09 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:10 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:11 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:15 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:19 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:20 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:24 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:25 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:25 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:27 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:27 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:28 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:29 +0000] [7206] [DEBUG] GET /
+[2019-02-21 18:25:30 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:30 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:31 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:34 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:39 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:39 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:25:44 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:45 +0000] [7207] [DEBUG] GET /
+[2019-02-21 18:25:45 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:49 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:49 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:50 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:25:54 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:25:59 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:00 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:04 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:04 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:05 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:07 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:07 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:26:08 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:14 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:14 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:26:16 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:26:17 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:21 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:21 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:26:24 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:26 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:29 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:30 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:32 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:37 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:41 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:41 +0000] [7207] [DEBUG] Closing connection. 
+[2019-02-21 18:26:41 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:43 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:43 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:44 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:46 +0000] [7205] [DEBUG] Closing connection. 
+[2019-02-21 18:26:47 +0000] [7206] [DEBUG] Closing connection. 
+[2019-02-21 18:26:47 +0000] [7207] [DEBUG] Closing connection. 
